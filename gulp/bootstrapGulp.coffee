@@ -1,4 +1,4 @@
-module.exports = (gulp, paths, bundles, dbConfig) ->
+module.exports = (gulp, paths) ->
 
   # Import Plugins
   plugins = require './config/plugins'
@@ -12,4 +12,4 @@ module.exports = (gulp, paths, bundles, dbConfig) ->
   require('./tasks/webserver')(gulp, paths, plugins)
   require('./tasks/noop')(gulp, paths, plugins)
 
-  return
+  return true
