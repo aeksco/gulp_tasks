@@ -11,7 +11,7 @@ module.exports = (gulp, paths, plugins) ->
         basedir: 'node_modules'
 
       .pipe plugins.rename
-        basename: if process.env.NODE_ENV == 'dev' then 'index' else 'mindex'
+        basename: if process.env.NODE_ENV == 'dev' then 'index' else 'mindex' # TODO - remove this, replace with dedicated option
         extname: '.html'
 
       .pipe gulp.dest paths.dest

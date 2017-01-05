@@ -3,8 +3,7 @@ plugins = p = {}
 
 # # # # #
 # Gulp
-
-p.coffeelint  = require 'gulp-coffeelint'
+# p.coffeelint  = require 'gulp-coffeelint'
 p.concat      = require 'gulp-concat'
 p.gutil       = require 'gulp-util'
 p.jade        = require 'gulp-jade'
@@ -15,23 +14,21 @@ p.sass        = require 'gulp-sass'
 p.size        = require 'gulp-size'
 p.uglify      = require 'gulp-uglify'
 p.webserver   = require 'gulp-webserver'
+p.coffee      = require 'gulp-coffee'
 
 # # # # #
 # Vinyl
-
 p.buffer  = require 'vinyl-buffer'
 p.source  = require 'vinyl-source-stream'
 
 # # # # #
 # Browserify
-
 p.browserify  = require 'browserify'
 p.coffeeify   = require 'coffeeify'
 p.jadeify     = require 'jadeify'
 
 # # # # #
 # Utility
-
 p._           = require 'underscore'
 p.fs          = require 'fs'
 p.resolve     = require 'resolve'
